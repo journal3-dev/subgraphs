@@ -19,7 +19,6 @@ dataSources:
         - SkillMint
         - TransferBatch
         - TransferSingle
-        - URI
       abis:
         - name: SkillsRepo
           file: SkillsRepo/abis/SkillsRepo.json
@@ -34,6 +33,4 @@ dataSources:
           handler: handleTransferBatch
         - event: TransferSingle(indexed address,indexed address,indexed address,uint256,uint256)
           handler: handleTransferSingle
-        - event: URI(string,indexed uint256)
-          handler: handleURI
       file: SkillsRepo/SkillsRepo.wasm

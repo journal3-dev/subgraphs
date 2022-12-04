@@ -59,13 +59,4 @@ export class Skill extends Entity {
   set totalMinted(value: BigInt) {
     this.set("totalMinted", Value.fromBigInt(value));
   }
-
-  get URI(): Bytes {
-    let value = this.get("URI");
-    return value!.toBytes();
-  }
-
-  set URI(value: Bytes) {
-    this.set("URI", Value.fromBytes(value));
-  }
 }
